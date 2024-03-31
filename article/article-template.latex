@@ -59,7 +59,7 @@ $else$
 \usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
 $endif$
 
-% Packages I've been using for different reasons...
+% Packages I have been using for different reasons
 % \usepackage[backref,pagebackref]{hyperref}
 %\usepackage{fontspec}
 \usepackage{hyperref}
@@ -118,7 +118,7 @@ $endif$
   pdfkeywords={$for(keywords)$$keywords$$sep$; $endfor$},
   $endif$}
 
-% use upquote if available, for straight quotes in verbatim environments
+% Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
 \IfFileExists{microtype.sty}{%
@@ -253,10 +253,12 @@ $if(abstract)$
 $if(abstractspacing)$\$abstractspacing$spacing$else$\doublespacing$endif$ \noindent $abstract$
 \vspace{.25cm}
 
+% Keywords
 $if(keywords)$
 \noindent \textbf{Keywords}: $keywords$
 \vspace{.25cm}
 
+% JEL Codes
 $if(jelcodes)$
 \noindent \textbf{JEL Classification Codes}: $jelcodes$
 $endif$

@@ -8,7 +8,7 @@ author:
   - John Doe\thanks{PhD Candidate, Department of X, University of Y.}
   - Jane Smith\thanks{PhD Candidate, Department of X, University of Y, \href{mailto:jsmith@university.ac.uk}{\texttt{jsmith@university.ac.uk}}, \url{https://jsmith.org}.}
 abstract: |
-  \noindent This is a personal article template for Quarto, featuring Libertine and Inconsolata fonts, British English, double-spaced text, and numbered sections. The colour scheme is personalised too: URLs are in dark blue, internal links are in mahogany, and the table of contents is in black. The template also includes pre-formatted entries for the abstract, keywords, and JEL classification codes. You will need to install Jupyter, Pandoc, Python, Quarto, and a TeX system to compile the PDF. If you prefer not to download large TeX binaries, I recommend installing the `TinyTeX` module for Quarto. I hope you find this template useful. Feel free to send me a message if you have any suggestions.
+  \noindent This is a personal article template for Quarto, featuring Libertine and Inconsolata fonts, British English, double-spaced text, and numbered sections. The colour scheme is personalised too: URLs are in dark blue, internal links are in mahogany, and the table of contents is in black. The template also includes pre-formatted entries for the abstract, keywords, and JEL classification codes. You will need to install Jupyter, Pandoc, Python, Quarto, and a \TeX{} system to compile the PDF. If you prefer not to download large \TeX{} binaries, I recommend installing the `TinyTeX` module for Quarto. I hope you find this template useful. Feel free to send me a message if you have any suggestions.
 abstractspacing: double
 keywords: Jupyter, \LaTeX, Pandoc, Python, Quarto
 jelcodes: A00, B11, C22
