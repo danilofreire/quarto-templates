@@ -1,0 +1,50 @@
+---
+title: "Title Page"
+date: today
+date-format: long
+lang: en-GB
+author: ""
+fontfamily: libertine
+monofont: inconsolata
+monofontoptions: scaled=.95
+fontsize: 12pt
+urlcolor: darkblue
+linkcolor: Mahogany
+citecolor: Mahogany
+spacing: double
+jupyter: python3
+pdf-engine: pdflatex
+format: 
+    pdf:
+      template: title-page-template.latex
+---
+
+## Manuscript Title
+
+"Paper Title"
+
+## Authors
+
+Danilo Freire: Senior Lecturer, School of Social and Political Sciences, University of Lincoln, Brayford Pool, Lincoln, Lincolnshire LN6 7TS, United Kingdom, <dfreire@lincoln.ac.uk>, <https://danilofreire.github.com>. Corresponding
+author.
+
+\vspace{.4cm}
+
+Umberto Mignozzetti: Assistant Teaching Professor, Department of Political Science and Computational Social Science Program, University of California, San Diego, SSB 393, 2997 Thurgood Marshall Ln, La Jolla, CA 92037, United States of America, <umbertomig@ucsd.edu>, <https://umbertomig.com>.
+
+## Data Availability Statement
+
+Replication materials are available at <https://github.com/danilofreire>.
+
+## Funding Statement
+
+This research was funded by the Fundação Getulio Vargas Applied Research Grant Office (RPCAP-FGV). The funding body did not interfere in the study design or implementation.
+
+## Conflict of Interest Disclosure
+
+The authors declare that no competing interests exist, financial or otherwise.
+
+## Ethics Approval Statement
+
+The experiment was pre-registered using the EGAP pre-registry tool (20180504AA) and received IRB approval from New York University (IRB-FY2017-17) and Fundação Getulio Vargas (IRB-01/2017).
+

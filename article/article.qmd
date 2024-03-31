@@ -16,11 +16,15 @@ fontfamily: libertine
 monofont: inconsolata
 monofontoptions: scaled=.95
 fontsize: 12pt
+spacing: double
+geometry: 
+  - top=2cm
+  - bottom=2cm
+  - left=2cm
+  - right=2cm
 urlcolor: darkblue
 linkcolor: Mahogany
 citecolor: Mahogany
-spacing: double
-number-sections: true
 jupyter: python3
 pdf-engine: pdflatex
 format: 
@@ -29,7 +33,6 @@ format:
       toc: false
       toc-depth: 3
       number-sections: true
-      colorlinks: true
       cite-method: natbib
       biblio-style: apalike
       bibliography: references.bib
