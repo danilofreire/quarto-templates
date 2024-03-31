@@ -1,0 +1,109 @@
+---
+title: "My Academic Paper"
+date: today
+date-format: long
+lang: en-GB
+thanks: We thank our colleagues for their useful feedback. 
+author: 
+  - John Doe\thanks{PhD Candidate, Department of X, University of Y.}
+  - Jane Smith\thanks{PhD Candidate, Department of X, University of Y, \href{mailto:jsmith@university.ac.uk}{\texttt{jsmith@university.ac.uk}}, \url{https://jsmith.org}.}
+abstract: |
+  \noindent This is a personal article template for Quarto, featuring Libertine and Inconsolata fonts, British English, double-spaced text, and numbered sections. The colour scheme is personalised too: URLs are in dark blue, internal links are in mahogany, and the table of contents is in black. The template also includes pre-formatted entries for the abstract, keywords, and JEL classification codes. You will need to install Jupyter, Pandoc, Python, Quarto, and a TeX system to compile the PDF. If you prefer not to download large TeX binaries, I recommend installing the `TinyTeX` module for Quarto. I hope you find this template useful. Feel free to send me a message if you have any suggestions.
+abstractspacing: double
+keywords: Jupyter, \LaTeX, Pandoc, Python, Quarto
+jelcodes: A00, B11, C22
+fontfamily: libertine
+monofont: inconsolata
+monofontoptions: scaled=.95
+fontsize: 12pt
+urlcolor: darkblue
+linkcolor: Mahogany
+citecolor: Mahogany
+spacing: double
+number-sections: true
+jupyter: python3
+pdf-engine: pdflatex
+format: 
+    pdf:
+      template: article-template.latex
+      toc: false
+      toc-depth: 3
+      number-sections: true
+      colorlinks: true
+      cite-method: natbib
+      biblio-style: apalike
+      bibliography: references.bib
+---
+
+\newpage
+
+# Introduction {#sec-introduction}
+
+This is section [-@sec-introduction]. *Italics*, **bold**, and `typewriter`. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[^fn-citation]
+
+[^fn-citation]: This is a footnote. You can use any name you want to refer to it. Here is another citation: @freire2018evaluating [10--15]. And this is a URL: <https://github.com/danilofreire/quarto-templates>.
+
+Aenean tortor lacus, pharetra vel posuere eget, gravida non lorem. Phasellus eros ante, dapibus tincidunt nisl eget, iaculis fermentum odio. Suspendisse vitae nunc ac mauris semper molestie. Donec aliquam tellus eros, non interdum eros iaculis ut. Phasellus nisl dui, aliquam ullamcorper ante non, hendrerit molestie risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan libero a purus sodales, eget vulputate orci pellentesque. Morbi sit amet tellus suscipit, gravida quam eget, mollis tortor. Etiam eu urna dictum, condimentum nunc ut, ullamcorper elit. This is a link to @tbl-markdown:
+
+| A            | New              | Table          |
+|:-------------|:----------------:|---------------:|
+|left-aligned  |centre-aligned    |right-aligned   |
+|*italics*     |~~strikethrough~~ |**boldface**    |
+
+Table: Your Caption {#tbl-markdown}
+
+You can also create your tables in Python using the [`tabulate`](https://pypi.org/project/tabulate/) package. @tbl-planets offers an example:
+
+```{python}
+
+#| label: tbl-planets
+#| tbl-cap: Astronomical objects
+
+from IPython.display import Markdown
+from tabulate import tabulate
+table = [["Astronomical object","R (km)", "Mass (kg)"],
+         ["Sun","696,000",1.989e30],
+         ["Earth","6,371",5.972e24],
+         ["Moon","1,737",7.34e22],
+         ["Mars","3,390",6.39e23]]
+Markdown(tabulate(table, 
+  headers="firstrow", colalign=("left", "center", "right")
+))
+```
+
+A \LaTeX \hspace{.01cm} equation. Black-Scholes ([-@eq-black-scholes]) is a mathematical model used to price derivatives:
+
+$$
+\frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2}
+\frac{\partial^{2} \mathrm C}{\partial \mathrm C^2}
+  + \mathrm r \mathrm S \frac{\partial \mathrm C}{\partial \mathrm S}\ =
+  \mathrm r \mathrm C 
+$$ {#eq-black-scholes} 
+
+1. ordered list
+2. item 2
+    i) sub-item 1
+         A.  sub-sub-item 1
+
+* unordered list
+    * sub-item 1
+
+For a demonstration of a line plot on a polar axis, see @fig-polar.
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
