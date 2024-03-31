@@ -1,19 +1,29 @@
+% Document class
 \documentclass[$if(fontsize)$$fontsize$$else$11pt$endif$,$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{letter}
+
+% Packages
+
+% Font
 $if(fontfamily)$
 \usepackage[$fontfamilyoptions$]{$fontfamily$}
 $else$
 \usepackage{libertine}
 $endif$
-% This is a nice mathfont, it fits well with Libertine
-% Comment the line if you want to use a different one
+
+% Math font. Comment the line if you want to use a different one
 \usepackage[libertine]{newtxmath}
+
 % The default monofont 
 % Again, comment the line below if you want to change it
 \usepackage[scaled=.95]{inconsolata}
+
+% Spacing
 \usepackage{setspace}
 $if(spacing)$
 \$spacing$spacing
 $endif$
+
+% More font options
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
@@ -54,22 +64,25 @@ $endif$
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
+% Use microtype if available
 \IfFileExists{microtype.sty}{%
 \usepackage{microtype}
 \UseMicrotypeSet[]{basicmath} % disable protrusion for tt fonts
 }{}
+
 % Margin
 $if(margin)$
 \usepackage[margin=$margin$]{geometry}
 $else$
 \usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
 $endif$
+
 % UK English
 \usepackage[UKenglish]{babel}
 \usepackage[UKenglish]{isodate}
 \cleanlookdateon
 
+% Links
 \usepackage[unicode=true]{hyperref}
 $if(colorlinks)$
 \usepackage[usenames,dvipsnames]{xcolor}
@@ -95,6 +108,8 @@ $else$
 $endif$
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
+
+% Languages
 $if(lang)$
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[shorthands=off,$for(babel-otherlangs)$$babel-otherlangs$,$endfor$main=$babel-lang$]{babel}
@@ -109,6 +124,8 @@ $for(polyglossia-otherlangs)$
 $endfor$
 \fi
 $endif$
+
+% Bibliography, if necessary
 $if(natbib)$
 \usepackage{natbib}
 \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
@@ -119,6 +136,8 @@ $for(bibliography)$
 \addbibresource{$bibliography$}
 $endfor$
 $endif$
+
+% Lists, enumerations, and verbatim text
 $if(listings)$
 \usepackage{listings}
 $endif$
@@ -132,11 +151,15 @@ $if(verbatim-in-note)$
 \usepackage{fancyvrb}
 \VerbatimFootnotes % allows verbatim text in footnotes
 $endif$
+
+% Tables
 $if(tables)$
 \usepackage{longtable,booktabs}
 % Fix footnotes in tables (requires footnote package)
 \IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
 $endif$
+
+% Graphics
 $if(graphics)$
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -159,6 +182,8 @@ $if(strikeout)$
 % avoid problems with \sout in headers with hyperref:
 \pdfstringdefDisableCommands{\renewcommand{\sout}{}}
 $endif$
+
+% Indentation
 $if(indent)$
 $else$
 \IfFileExists{parskip.sty}{%
@@ -171,6 +196,8 @@ $endif$
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Section numbering
 $if(numbersections)$
 \setcounter{secnumdepth}{$if(secnumdepth)$$secnumdepth$$else$5$endif$}
 $else$
@@ -178,6 +205,7 @@ $else$
 $endif$
 $if(subparagraph)$
 $else$
+
 % Redefines (sub)paragraphs to behave more like sections
 \ifx\paragraph\undefined\else
 \let\oldparagraph\paragraph
@@ -206,24 +234,28 @@ $if(dir)$
 \fi
 $endif$
 
-% set default figure placement to htbp
+% Set default figure placement to htbp
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
 
+% Signature
 $if(signature)$
 \usepackage{graphicx,grffile}
 \signature{$if(signature-before)$\vspace*{$signature-before$}$endif$\includegraphics{$signature$}$if(author)$\\$if(signature-after)$\vspace*{$signature-after$}$endif$$for(author)$$author$$sep$\\$endfor$$endif$}
 $else$
 $if(author)$
 \signature{$for(author)$$author$$sep$\\$endfor$}
+\vspace{1.5cm}
 $endif$
 $endif$
 
+% Date
 $if(date)$
 \date{$date$}
 $endif$
 
+% Return address
 $for(header-includes)$
 $header-includes$
 $endfor$
@@ -261,13 +293,22 @@ $endif$
 }
 $endif$
 
-\begin{letter}{$for(address)$$address$$sep$\\$endfor$}
+% Address and subject
+\begin{letter}{
+  $for(address)$$address$$sep$\\$endfor$
+  $if(subject)$\\ ~ \\
+  $if(subject-title)$$subject-title$$else$Subject$endif$
+  $if(subject-suffix)$$subject-suffix$$else$:$endif$ $subject$
+  $endif$
+}
 \opening{$opening$}
-
 $body$
 
+% Closing
 \longindentation=$if(closing-indentation)$$closing-indentation$$else$0pt$endif$
+\vspace{0.5cm}
 $if(closing)$\closing{$closing$}$endif$
+\vfill
 $if(encl)$
 \encl{$for(encl)$$encl$$sep$\\$endfor$}
 $endif$
@@ -275,11 +316,12 @@ $if(cc)$
 \cc{$for(cc)$$cc$$sep$\\$endfor$}
 $endif$
 $if(ps)$
-\ps{$ps$}
+\ps{PS: $ps$}
 $endif$
 
 \end{letter}
 
+% Bibliography
 $if(natbib)$
 $if(bibliography)$
 $if(biblio-title)$

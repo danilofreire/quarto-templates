@@ -1,11 +1,12 @@
 ---
 author: 
-    - Danilo Alves M. Freire \vspace{1.5cm}
+    - Danilo Alves M. Freire 
 opening: To Whom It May Concern,
 closing: Sincerely,
 address:
     - The Editors
     - Journal of Academic Studies
+subject: Collaboration
 return-address: 
     - Danilo Alves M. Freire
     - University of Lincoln 
@@ -20,6 +21,7 @@ cc:
 encl:
     - Enclosure 1
     - Enclosure 2
+ps: Lorem ipsum dolor sit amet.
 letterhead: 
 signature: 
 fontfamily: libertine
@@ -40,7 +42,6 @@ pdf-engine: pdflatex
 inline-links: true
 signature-before: -4ex
 signature-after: 0ex
-colorlinks: true
 format: 
     pdf: 
       template: letter-template.latex
@@ -69,5 +70,3 @@ Quis vel eros donec ac odio tempor. Pretium fusce id velit ut tortor. Etiam temp
 Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Nisl purus in mollis nunc. Volutpat maecenas volutpat blandit aliquam etiam erat velit. Velit euismod in pellentesque massa. Quisque sagittis purus sit amet. Arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc.
 
 Elementum eu facilisis sed odio. Eu scelerisque felis imperdiet proin fermentum leo vel. Feugiat nisl pretium fusce id velit ut. Bibendum enim facilisis gravida neque convallis a cras semper auctor. At elementum eu facilisis sed odio morbi quis. A diam maecenas sed enim ut sem. Turpis nunc eget lorem dolor sed viverra. Sit amet cursus sit amet dictum sit amet justo. Orci nulla pellentesque dignissim enim sit. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Cras fermentum odio eu feugiat pretium nibh. Duis convallis convallis tellus id. Sed felis eget velit aliquet sagittis. Non enim praesent elementum facilisis leo vel fringilla. Sodales ut eu sem integer.
-
-\vspace{.5cm}
