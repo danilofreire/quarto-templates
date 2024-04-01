@@ -1,0 +1,181 @@
+% !TEX program = XeLaTeX
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{article}
+
+% Fonts
+$if(mainfont)$
+\usepackage[$fontfamilyoptions$]{$fontfamily$}
+$else$
+\usepackage[mono=false]{libertine}
+$endif$
+
+% Undefine \Bbbk if it's already defined
+%\let\Bbbk\undefined
+
+% This is a nice mathfont, it fits well with Libertine
+% Comment the line if you want to use a different one
+\usepackage[libertine]{newtxmath}
+
+% Set up Inconsolata as the monofont
+$if(monofont)$
+\usepackage[$monofontoptions$]{$monofont$}
+$else$
+\usepackage[scaled=0.8]{inconsolata}
+$endif$
+
+% Packages I have been using for different reasons
+% \usepackage[backref,pagebackref]{hyperref}
+%\usepackage{fontspec}
+\usepackage{hyperref}
+\usepackage{dcolumn}
+\usepackage{graphicx}
+\usepackage{float}
+\floatplacement{figure}{H}
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning}
+\usepackage{mathtools}
+\usepackage{setspace}
+
+% Colours
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.55}
+% \usepackage[backref,pagebackref]{hyperref}
+
+% Margin
+$if(margin)$
+\usepackage[margin=$margin$]{geometry}
+$else$
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+$endif$
+
+\usepackage[UKenglish]{babel}
+\usepackage[UKenglish]{isodate}
+\exhyphenpenalty=1000
+\hyphenpenalty=1000
+\widowpenalty=1000
+\clubpenalty=1000
+
+% Avoid hyphenation
+% \usepackage[none]{hyphenat}
+
+% Justify text
+\usepackage{ragged2e}
+
+% Set your name here
+\def\name{$author$}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{$footerlink$}
+
+% Hypersetup
+\hypersetup{
+  linkcolor=$if(linkcolor)$$linkcolor$$else$Mahogany$endif$,
+  citecolor=$if(citecolor)$$linkcolor$$else$Mahogany$endif$,
+  urlcolor=$if(urlcolor)$$urlcolor$$else$darkblue$endif$, 
+  breaklinks=true, 
+  colorlinks=true,
+  $if(author)$
+  pdftitle={$author$ CV},
+  $endif$}
+
+% Customise page headers
+\pagestyle{myheadings}
+\markright{$author$}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Remove section and subsection numbering
+\setcounter{secnumdepth}{0}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+	\begin{list}{}{
+			\setlength{\leftmargin}{1.5em}
+		}
+		}{
+	\end{list}
+}
+
+% Tightlist
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Listings
+$if(listings)$
+\usepackage{listings}
+$endif$
+$if(lhs)$
+\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
+$endif$
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+% Verbatim
+$if(verbatim-in-note)$
+\usepackage{fancyvrb}
+\VerbatimFootnotes % allows verbatim text in footnotes
+$endif$
+
+% Begin the actual CV
+\begin{document}
+$if(title)$
+\maketitle
+$endif$
+
+% Set single spacing for header
+\singlespacing
+
+% Place name at left
+{\huge \bf \name}
+
+% Alternatively, print name centred and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+	$if(address)$$address$$endif$
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+    \begin{tabular}{ll}
+        Email:          & $if(email)$\href{mailto:$email$}{\texttt{$email$}}$endif$ \\
+        Homepage:       & $if(homepage)$\href{http://$homepage$}{\texttt{$homepage$}}$endif$ \\
+        GitHub:         & $if(github)$\href{https://github.com/$github$}{\texttt{github.com/$github$}}$endif$ \\
+        Google Scholar: & $if(scholar)$\href{https://$scholar$}{\texttt{$scholar$}}$endif$ \\
+    \end{tabular}
+\end{minipage}
+
+$for(include-before)$
+$include-before$
+$endfor$
+
+% Spacing
+$if(spacing)$
+\$spacing$spacing
+$endif$
+
+$body$
+
+$for(include-after)$
+$include-after$
+$endfor$
+
+\end{document}
+

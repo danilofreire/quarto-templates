@@ -1,0 +1,174 @@
+---
+lang: en-GB
+author: Danilo Freire
+address: |
+  University of Lincoln \
+  School of Social and Political Sciences \
+  Room 3211, Bridge House, Brayford Campus \
+  Lincoln, LN5 7BN, United Kingdom
+email: dfreire@lincoln.ac.uk
+homepage: danilofreire.github.io
+github: danilofreire
+scholar: tinyurl.com/df-gscholar
+fontfamily: libertine
+monofont: inconsolata
+monofontoptions: scaled=.95
+fontsize: 11pt
+spacing: onehalf
+geometry: 
+  - top=2.5cm
+  - bottom=2.5cm
+  - left=2.2cm
+  - right=2.2cm
+urlcolor: darkblue
+linkcolor: Mahogany
+citecolor: Mahogany
+footerlink: https://danilofreire.github.io/DaniloFreire.pdf
+pdf-engine: pdflatex
+format: 
+    pdf:
+      template: cv-template.latex
+---
+
+# Academic Appointments
+
+- Senior Lecturer, School of Social and Political Sciences, University of Lincoln, 2021--present.
+- Postdoctoral Research Associate, Political Theory Project, Brown University, 2018--2020.
+
+# Education
+
+- PhD in Political Economy, King's College London, 2018.
+- MA in International Relations, The Graduate Institute Geneva, 2014.
+- MA in Political Science, University of São Paulo, 2011.
+- BA in Social Sciences, University of São Paulo, 2007.
+
+# Research Interests
+
+- Substantive: Public Policy, Political Violence, Organised Crime, Collective Action, Brazilian Politics
+- Methodological: Computational Social Science, Impact Evaluation, Field Experiments, Meta-Analysis
+
+# Publications
+
+## Peer-Reviewed Articles
+
+- ["Vigilantism and Institutions: Attitudes toward Lynching in Brazil"](https://doi.org/10.1177/20531680221150389) (with David Skarbek). *Research & Politics*, 2023, 10(1), 1--8. [Replication files](https://github.com/danilofreire/lynching-experiment-brazil).
+- ["Legislature Size and Welfare: Evidence From Brazil"](https://github.com/umbertomig/legislature-size-welfare) (with Umberto Mignozzetti and Gabriel Cepaluni). Forthcoming, *American Journal of Political Science*, 2022. [Replication files](https://github.com/umbertomig/legislature-size-welfare).
+- ["The Effect of Legislature Size on Distributive Politics: A Meta-Analysis"](https://doi.org/10.1017/S0007123422000552) (with Umberto Mignozzetti, Catarina Roman and Huzeyfe Alptekin). First view, *British Journal of Political Science*, 2021. [Replication files](https://github.com/danilofreire/legislature-size-meta-analysis).
+- ["Institutional Design and Elite Support for Climate Policies: Evidence from Latin American Countries"](http://dx.doi.org/10.1017/XPS.2020.19) (with Umberto Mignozzetti and David Skarbek). *Journal of Experimental Political Science*, Summer 2021, 172--184. [Replication files](https://doi.org/10.7910/DVN/VTA5OA).
+- ["Bottom-Up Accountability and Public Service Provision: Evidence from a Field Experiment in Brazil"](https://doi.org/10.1177%2F2053168020914444) (with Manoel Galdino and Umberto Mignozzetti). *Research & Politics*, 2020, 7(2), 1--8. [Replication files](https://github.com/umbertomig/tdp-accountability).
+- ["congressbr: An R Package for Analysing Data from Brazil's Chamber of Deputies and Federal Senate"](https://doi.org/10.25222/larr.447) (with Robert McDonnell and Guilherme Duarte). *Latin American Research Review*, 2019, 54(4), 958--969. [Software repository](https://github.com/duarteguilherme/congressbr).
+- ["Beasts of Prey or Rational Animals?: Private Governance in Brazil's *Jogo do Bicho*"](https://doi.org/10.1177/0094582X19846519). *Latin American Perspectives*, 2019, 46(4), 230--244. Media coverage: [BBC Brazil](http://www.bbc.com/portuguese/brasil-40140693).
+- ["Evaluating the Effect of Homicide Prevention Strategies in São Paulo, Brazil: A Synthetic Control Approach"](https://doi.org/10.25222/larr.334). *Latin American Research Review*, 2018, 53(2), 231--249. [Replication files](https://github.com/danilofreire/homicides-sp-synth). Media coverage: [Valor Econômico](http://www.valor.com.br/cultura/5111524/sangue-no-asfalto).
+- ["prisonbrief: An R Package that Returns Tidy Data from the World Prison Brief Website"](https://doi.org/10.21105/joss.00361) (with Robert McDonnell). *Journal of Open Source Software*, 2018, 3(22), 361. [Software repository](https://github.com/danilofreire/prisonbrief).
+- ["Lack of Preferences, Political Trust and Education Levels: Alternative Explanations for Invalid Votes in Brazilian Elections"](http://www.iapss.org/wp-content/uploads/2014/10/ELA1.1_2.Lack-of-Preferences-Political-Trust-and-Education-Levels.pdf) (with Guilherme Arbache and Pietro Rodrigues). *Encuentro Latinoamericano*, 2015, 1(1), 29--50. [Replication files](https://github.com/danilofreire/invalid-votes-brazil).
+- ["Between Ballot Boxes and Guns: The Competitiveness of the Executive Branch and Civil Wars, 1976-2000"](http://recyt.fecyt.es/index.php/recp/article/view/37638). *Revista Española de Ciencia Política*, 2014, 36, 33--60. [Replication files](https://doi.org/10.7910/DVN/NSDUYG).
+
+## Working Papers
+
+- ["Financial Incentives and Health Care Provision: Evidence from an Experimental *Aedes aegypti* Control Programme in Brazil"](https://github.com/danilofreire/incentives-healthcare) (with Umberto Mignozzetti). Revise and resubmit, *PLOS Neglected Tropical Diseases*.
+- ["The Reliability of Replications: A Study in Computational Reproduction"](https://osf.io/preprints/socarxiv/j7qta) (with Nate Breznau, Eike Mark Rinke, Alexander Wuttke and others). Under review.
+- ["Legislative Outcomes and Malapportionment: Evidence from Latin America"](https://github.com/danilofreire/danilofreire.github.io/blob/master/malapportionment.pdf) (with Umberto Mignozzetti and Catarina Roman).
+- ["Democratising Policy Analytics with AutoML"](https://github.com/danilofreire/mercatus-analytics-papers/blob/main/automl-paper/automl.pdf).
+- ["What Drives State-Sponsored Violence? Evidence from Extreme Bounds Analysis and Ensemble Learning Methods"](https://osf.io/pzx3q) (with Gary Uzonyi).
+- "Environmental Protection in Weak Party Systems: Evidence from Brazil" (with Umberto Mignozzetti, in preparation).
+- "Natural Disasters and Identity Reconstruction Among Syrian Refugees" (with Hamoon Khelghat-Doost, in preparation).
+
+## Book
+
+- ["Natural Resources and Policy Choices in Latin America"](https://github.com/danilofreire/danilofreire.github.io/blob/01dc4c9566bb5ade15b5db950046ed0a386fc5f1/texts/natural_resources_policy_choices_latam.pdf) (with Giovanna França and Umberto Mignozzetti, editors). São Paulo: Konrad Adenauer Foundation, 2020.
+
+## Book Chapters
+
+- ["Prison Gangs"](https://osf.io/kuqqx/) (with David Skarbek). In: Griffin, Hayden; Woodward, Vanessa (ed.). *Handbook of Corrections in the United States*. London: Routledge, 2017, 399--408.
+- ["A Nova Gestão Pública e a Qualidade da Democracia" ("The New Public Administration and the Quality of Democracy")](https://fnst.org/sites/default/files/uploads/2017/12/08/ngp.pdf). In: Erkens, Rainer (ed.). *Nova Gestão Pública*. São Paulo: Instituto Friedrich Naumann, 2010, 9--15.
+
+## Other Publications
+
+- ["Geopolitics of Renewable Energies in Latin America: A Survey"](https://www.kas.de/documents/273477/273526/Geopolitics+of+Renewable+Energy+in+Latin+America+-+A+Survey.pdf/9fe39ef1-6028-0836-90b0-aada31cb6769?version=1.0&t=1551887777018) (with Umberto Mignozzetti). 2019. Policy Report commissioned by the Konrad Adenauer Stiftung.
+- ["Peering at Open Peer Review"](https://thepoliticalmethodologist.files.wordpress.com/2016/02/tpm_v23_n1.pdf). *The Political Methodologist*, 2015, 23 (1), 6--11.
+- ["Book Review: Causal Inference, Shaolin-Style: 'Mastering Metrics' by Joshua D. Angrist and Jörn-Steffen Pischke"](http://www.scielo.br/readcube/epdf.php?doi=10.1590/1981-38212015000300026&pid=S1981-38212015000300178&pdf_path=bpsr/v9n3/1981-3821-bpsr-9-3-0178.pdf&lang=en). *Brazilian Political Science Review*, 2015, 9 (3), 178--185.
+- ["Entering the Underworld: Prison Gang Recruitment in São Paulo's Primeiro Comando da Capital"](http://dx.doi.org/10.6084/m9.figshare.1209203). Geneva: Master's Degree Thesis in International Relations, The Graduate Institute of International and Development Studies, 2014, 97p.
+- ["Book Review: 'Why Nations Fail' by Daron Acemoglu and James Robinson"](http://seer.bce.unb.br/index.php/MED/article/view/7505/6497). *Meridiano47*, 2013, 14 (135).
+- ["Entre Urnas e Armas: A Competitividade do Executivo e as Guerras Civis, 1976-2000" (Between Ballot Boxes and Guns: The Competitiveness of the Executive Branch and Civil Wars, 1976-2000)](http://dx.doi.org/10.6084/m9.figshare.963082). São Paulo: Master's Degree Thesis in Political Science, University of São Paulo, 2011, 204p. [Replication files](http://dx.doi.org/10.6084/m9.figshare.963183).
+
+# Software
+
+- [pinochet: Data about the victims of the Pinochet regime, 1973-1990](http://danilofreire.github.io/pinochet) (with Lucas Mingardi and Robert McDonnell).
+- [congressbr: Downloads, unpacks and tidies Legislative data from the Brazilian Federal Senate and Chamber of Deputies](https://github.com/RobertMyles/congressbr) (with Robert McDonnell and Guilherme Duarte).
+- [prisonbrief: R package that returns tidy data from the World Prison Brief website](http://danilofreire.github.io/prisonbrief) (with Robert McDonnell).
+
+# Fellowships and Awards
+
+- Associate Fellow (PR240832), Advance HE, 2022--present.
+- Fellow, Evidence in Governance and Politics (EGAP), 2021--present.
+- Research Grant, King's College London, 2020. Joint with D. Skarbek (US$ 10,000).
+- Research Grant, Getulio Vargas Foundation, 2019. Joint with U. Mignozzetti and D. Skarbek (US$ 64,000, matching grant).
+- Research Grant, Konrad Adenauer Stiftung, 2018. Joint with U. Mignozzetti and D. Skarbek (US$ 64,000).
+- Google Social Impact Challenge Grant, 2017--2019. Joint with M. Galdino (principal investigator) and U. Mignozzetti (US$ 300,000).
+- Adam Smith Fellowship, Mercatus Center, George Mason University, 2016--2018 (US$ 10,000).
+- PhD Scholarship, Institute for Humane Studies, 2016--2017 (US$ 1,500).
+- Graduate School International Research Studentship, King's College London, 2015--2018 (US$ 58,000).
+- PhD Scholarship, Brazilian Ministry of Education, 2015--2018 (US$ 76,000).
+- Scholarship for MA Studies, Brazilian Ministry of Education, 2009--2011.
+
+\newpage
+
+# Selected Presentations and Invited Talks
+
+- ["Casting the First Stone: Attitudes Towards Lynching in Brazil"](https://github.com/danilofreire/lynching-experiment-brazil), University of Washington; University of Oxford; University of Notre Dame; São Paulo Military Police Academy, 2021.
+- ["Democratising Policy Analytics with AutoML"](http://github.com/danilofreire/mercatus-analytics-papers), Society for Policy Analytics, Mercatus Center, 2021.
+- ["Incentives in Health Care Prevention: Evidence from an Experimental Aedes Aegypti Control Programme in Brazil"](https://danilofreire.github.io/essex2020/aedes.html), Global South Academic Network, University of Essex, 2020.
+- ["Institutional Design and Elite Support for Climate Policies"](https://osf.io/9a6ch). APSA Annual Meeting, Washington, DC, 2019; SPSA Annual Meeting, San Juan, 2020.
+- ["Latin American Elites Favour Polycentric Governance in Climate Change Agreements"](https://osf.io/9a6ch). Annual Midwest Political Science Association Conference, Chicago, 2019.
+- ["What Drives State-Sponsored Violence?: Evidence from Extreme Bounds Analysis and Ensemble Learning Methods"](http://danilofreire.github.io/pcs-2019). Public Choice Society Annual Meeting, Louisville, 2019.
+- ["Three Ideas from the Vienna, Virginia, and Bloomington Schools of Political Economy"](https://www.overleaf.com/project/591ef5259fb58ede3dc4d369). Hayek Group Meeting, Friedrich Naumann Stiftung f{\"u}r die Freiheit and Prometheus -- Das Freiheitsinstitut, Berlin, 2017.
+- ["Beasts of Prey or Rational Animals?: Private Governance in Brazil's *Jogo do Bicho*"](https://osf.io/se2jr). VI Oxbridge Conference on Brazilian Studies, University of Cambridge, 2017.
+
+# Teaching
+
+- Lecturer and Seminar Leader (with Anthony Ellis and Elena Gaschino), [Policing Crime and Deviance](https://blackboard.lincoln.ac.uk/ultra/courses/_182116_1/cl/outline) (Undergraduate). University of Lincoln, 2021--present. [Student evaluations](https://danilofreire.github.io/evaluations/eval-pcd-2023.xlsx).
+- Lecturer and Seminar Leader (with Nick Cowen and Aris Trantidis), [Human Rights](https://blackboard.lincoln.ac.uk/ultra/courses/_184943_1/cl/outline) (Undergraduate). University of Lincoln, 2021--present. [Student evaluations](https://danilofreire.github.io/evaluations/eval-hr-2122.xlsx).
+- Instructor, [POLS 1824W -- Political Violence](https://danilofreire.github.io/pols1824w/) (Undergraduate). Brown University, Fall 2019. [Student evaluations](https://danilofreire.github.io/evaluations/eval-pol-vio.pdf).
+- Instructor, [POLS 1600 -- Political Research Methods](https://pols1600.github.io/) (Undergraduate). Brown University, Winter 2019. [Student evaluations](https://danilofreire.github.io/evaluations/eval-pol-meth.pdf).
+- Instructor, [Political Economy and Institutions](https://github.com/danilofreire/economia-politica-instituicoes-ufm) (Graduate). Centro de Estudios Superiores Online de Madrid Manuel Ayau (OMMA) and Universidad Francisco Marroquín, 2017. [Student evaluations](https://danilofreire.github.io/evaluations/eval-ufm.pdf).
+- Teaching Assistant, [Principles of Economics II -- Macroeconomics](https://github.com/danilofreire/core-econ) (Undergraduate). Professor Konstantinos Matakos, King's College London, Fall 2017.
+- Teaching Assistant, [Principles of Economics I -- Microeconomics](https://github.com/danilofreire/core-econ) (Undergraduate). Professor David Skarbek, King's College London, Winter 2017.
+
+# Skills
+
+## Software
+
+- Python, R, Stata, SQL, git, HTML, Quarto, \LaTeX.
+
+## Languages
+
+- Portuguese (native), English (fluent), Spanish (fluent), French (intermediate).
+
+<!-- 
+## Selected Additional Training
+
+- Transparent and Open Social Science Research, University of California, Berkeley, 2017. 
+- European Field Experiments Summer School, University of Palermo, 2017.
+- Text Analysis Using R, London School of Economics, 2017.
+- Data Science Specialisation, John Hopkins University on Coursera, 2015.
+- Modern Regression Analysis, IPSA Summer School, 2012.
+- Mixed Methods Design, IPSA Summer School, 2011.
+- Policies for Growth, World Bank Institute, 2011.
+-->
+
+# Service
+
+- Editor: Humanities & Social Sciences Communications, 2021--present.
+- Co-editor: Leviathan, University of São Paulo, 2012--2016.
+- Referee: Civil Wars, Journal of Latin American Studies, Journal of Peace Research, Latin American Research Review, Leviathan, Political Studies Review, Politikon, Princeton University Press, Revista Española de Ciencia Política, SAGE Open, The Social Science Journal, Swiss Political Science Review.
+
+# Memberships
+
+- American Economic Association, American Political Science Association, Evidence in Governance and Politics, Global South Academic Network, Society for Policy Analytics, Society for Political Methodology
+
+# References
+
+- David Skarbek. Professor of Political Science and Political Economy, Department of Political Science and the Political Theory Project, Brown University. Email: <david_skarbek@brown.edu>.
+- Fernando Limongi. Associate Professor, Department of Economics, Fundação Getulio Vargas. Email: <fernando.limongi@fgv.br>.
+- Umberto Mignozzetti. Assistant Teaching Professor, Department of Political Science and the Computational Social Sciences Program, University of California, San Diego. Email: <umbertomig@ucsd.edu>.
+- Gabriel Leon. Senior Lecturer, Department of Political Economy, King's College London. Email: <gabriel.leon@kcl.ac.uk>.
