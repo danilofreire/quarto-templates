@@ -1,6 +1,6 @@
 # Quarto Templates
 
-This repository contains a collection of personal [Quarto](https://quarto.org) PDF templates. The templates share a similar style, using [Pandoc Markdown](https://pandoc.org/getting-started.html), [Libertine](https://libertine-fonts.org/) and [Inconsolata](https://fonts.google.com/specimen/Inconsolata) fonts, British English spelling, coloured links, double spacing, back references, and numbered sections. Future updates will include templates for CVs, syllabi, cover letters, presentations, and academic posters.
+This repository contains a collection of personal [Quarto](https://quarto.org) PDF templates. The templates share a similar style, using [Pandoc Markdown](https://pandoc.org/getting-started.html), [Libertine](https://libertine-fonts.org/) and [Inconsolata](https://fonts.google.com/specimen/Inconsolata) fonts, British English spelling, coloured links, double spacing, back references, and numbered sections. Future updates will include templates for presentations and academic posters.
 
 Every folder contains a PDF file displaying the template's output. Check them out to see how the documents look like. Comments and suggestions are most welcome.
 
