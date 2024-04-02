@@ -38,7 +38,7 @@ $endif$
 \usepackage{setspace}
 
 % Colours
-\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \definecolor{darkblue}{rgb}{0.0,0.0,0.55}
 % \usepackage[backref,pagebackref]{hyperref}
 
