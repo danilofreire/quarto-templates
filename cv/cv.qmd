@@ -28,6 +28,8 @@ pdf-engine: pdflatex
 format: 
     pdf:
       template: cv-template.latex
+editor:
+  render-on-save: false
 ---
 
 # Academic Appointments

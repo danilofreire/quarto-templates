@@ -45,6 +45,8 @@ signature-after: 0ex
 format: 
     pdf: 
       template: letter-template.latex
+editor: 
+  render-on-save: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis

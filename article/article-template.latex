@@ -266,6 +266,12 @@ $endif$
 \end{abstract}
 $endif$
 
+% Change section numbers to letters if 
+% you want to use the template for appendices
+$if(appendix)$
+\appendix
+$endif$
+
 $for(include-before)$
 $include-before$
 $endfor$

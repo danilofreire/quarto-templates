@@ -17,6 +17,8 @@ pdf-engine: pdflatex
 format: 
     pdf:
       template: title-page-template.latex
+editor:
+  render-on-save: false
 ---
 
 ## Manuscript Title

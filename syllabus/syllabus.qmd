@@ -25,6 +25,8 @@ format:
       toc: true
       toc-depth: 3
       number-sections: false
+editor: 
+  render-on-save: false
 ---
 
 # Course Description

@@ -12,6 +12,7 @@ abstract: |
 abstractspacing: double
 keywords: Jupyter, \LaTeX, Pandoc, Python, Quarto
 jelcodes: A00, B11, C22
+appendix: false
 fontfamily: libertine
 monofont: inconsolata
 monofontoptions: scaled=.95
@@ -36,6 +37,8 @@ format:
       cite-method: natbib
       biblio-style: apalike
       bibliography: references.bib
+editor:
+  render-on-save: false
 ---
 
 \newpage
