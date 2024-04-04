@@ -78,7 +78,8 @@ $endif$
 \usetikzlibrary{arrows}
 \usetikzlibrary{positioning}
 \usepackage{mathtools}
-% \usepackage{caption}
+\usepackage{caption}
+\usepackage{subcaption}
 
 % Reduce font and spacing in Python chunks
 \usepackage{etoolbox} 

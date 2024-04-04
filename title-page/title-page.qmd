@@ -13,6 +13,7 @@ linkcolor: Mahogany
 citecolor: Mahogany
 spacing: double
 jupyter: python3
+highlight-style: arrow
 pdf-engine: pdflatex
 format: 
     pdf:

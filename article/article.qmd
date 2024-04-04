@@ -27,6 +27,7 @@ urlcolor: darkblue
 linkcolor: Mahogany
 citecolor: Mahogany
 jupyter: python3
+highlight-style: arrow
 pdf-engine: pdflatex
 format: 
     pdf:

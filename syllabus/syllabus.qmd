@@ -18,6 +18,8 @@ geometry:
 urlcolor: darkblue
 linkcolor: Mahogany
 citecolor: Mahogany
+engine: jupyter
+highlight-style: arrow
 pdf-engine: pdflatex
 format: 
     pdf:

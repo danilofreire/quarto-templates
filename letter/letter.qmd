@@ -38,6 +38,7 @@ urlcolor: darkblue
 linkcolor: Mahogany
 citecolor: Mahogany
 jupyter: python3
+highlight-style: arrow
 pdf-engine: pdflatex
 inline-links: true
 signature-before: -4ex
