@@ -1,7 +1,7 @@
 ---
 title: "Title Page"
 date: today
-date-format: long
+date-format: "DD MMMM, YYYY"
 lang: en-GB
 author: ""
 fontfamily: libertine

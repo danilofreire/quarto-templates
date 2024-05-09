@@ -1,7 +1,7 @@
 ---
 title: "My Academic Paper"
 date: today
-date-format: long
+date-format: "DD MMMM, YYYY"
 lang: en-GB
 thanks: We thank our colleagues for their useful feedback. 
 author: 
@@ -39,7 +39,7 @@ format:
       biblio-style: apalike
       bibliography: references.bib
 editor:
-  render-on-save: false
+  render-on-save: true
 ---
 
 \newpage

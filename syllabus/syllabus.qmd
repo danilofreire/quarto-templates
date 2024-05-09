@@ -1,7 +1,7 @@
 ---
 title: __Political Violence__
 date: today
-date-format: long
+date-format: "DD MMMM, YYYY"
 lang: en-GB
 author: 
   - Danilo Freire
