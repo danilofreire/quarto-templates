@@ -25,6 +25,7 @@ $endif$
 % Packages I have been using for different reasons
 % \usepackage[backref,pagebackref]{hyperref}
 %\usepackage{fontspec}
+\usepackage{fontawesome5}
 \usepackage{hyperref}
 \usepackage{dcolumn}
 \usepackage{graphicx}

@@ -13,6 +13,9 @@ $endif$
 % Math font. Comment the line if you want to use a different one
 \usepackage[libertine]{newtxmath}
 
+% Font awesome
+\usepackage{fontawesome5}
+
 % The default monofont 
 % Again, comment the line below if you want to change it
 \usepackage[scaled=.95]{inconsolata}
