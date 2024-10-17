@@ -24,7 +24,7 @@ $else$
 \usepackage[scaled=0.8]{inconsolata}
 $endif$
 
-# Font awesome
+% Font awesome
 \usepackage{fontawesome5}
 
 % Add the following packages to support kableExtra
