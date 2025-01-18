@@ -8,12 +8,12 @@ address:
 subject: Letter of Recommendation
 return-address: 
     - Danilo Freire
-    - Random University
-    - School of Randomness
-    - Your Address
-    - Your City, Post code, Country
-    - \href{mailto:email@email.com}{\texttt{email@email.com}}
-    - \href{https://danilofreire.github.io}{\texttt{https://danilofreire.github.io}}
+    - Department of Quantitative Theory and Methods
+    - Emory University
+    - 36 Eagle Row, Room 480
+    - Atlanta, GA 30322, USA
+    - <danilo.freire@emory.edu>
+    - <https://danilofreire.github.io>
 letterhead: 
 signature: 
 date: today
