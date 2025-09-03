@@ -61,23 +61,6 @@ Table: Your Caption {#tbl-markdown}
 
 You can also create your tables in Python using the [`tabulate`](https://pypi.org/project/tabulate/) package. @tbl-planets offers an example:
 
-```{python}
-
-#| label: tbl-planets
-#| tbl-cap: Astronomical objects
-
-from IPython.display import Markdown
-from tabulate import tabulate
-table = [["Astronomical object","R (km)", "Mass (kg)"],
-         ["Sun","696,000",1.989e30],
-         ["Earth","6,371",5.972e24],
-         ["Moon","1,737",7.34e22],
-         ["Mars","3,390",6.39e23]]
-Markdown(tabulate(table, 
-  headers="firstrow", colalign=("left", "center", "right")
-))
-```
-
 A \LaTeX \hspace{.01cm} equation. Black-Scholes ([-@eq-black-scholes]) is a mathematical model used to price derivatives:
 
 $$
@@ -94,23 +77,3 @@ $$ {#eq-black-scholes}
 
 * unordered list
     * sub-item 1
-
-For a demonstration of a line plot on a polar axis, see @fig-polar.
-
-```{python}
-#| label: fig-polar
-#| fig-cap: "A line plot on a polar axis"
-
-import numpy as np
-import matplotlib.pyplot as plt
-
-r = np.arange(0, 2, 0.01)
-theta = 2 * np.pi * r
-fig, ax = plt.subplots(
-  subplot_kw = {'projection': 'polar'} 
-)
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
-```

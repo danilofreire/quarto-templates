@@ -8,7 +8,7 @@ address:
 subject: Letter of Recommendation
 return-address: 
     - Danilo Freire
-    - Department of Quantitative Theory and Methods
+    - Department of Data and Decision Sciences
     - Emory University
     - 36 Eagle Row, Room 480
     - Atlanta, GA 30322, USA
