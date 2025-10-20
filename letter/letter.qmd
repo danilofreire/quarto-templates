@@ -7,7 +7,7 @@ address:
     - Journal of Academic Studies
 subject: Letter of Recommendation
 return-address: 
-    - Danilo Freire
+    - Danilo Alves M. Freire
     - Department of Data and Decision Sciences
     - Emory University
     - 36 Eagle Row, Room 480
@@ -17,7 +17,7 @@ return-address:
 letterhead: 
 signature: 
 date: today
-date-format: "DD MMMM, YYYY"
+date-format: "MMMM DD, YYYY"
 fontfamily: libertine
 monofont: inconsolata
 monofontoptions: scaled=.95
