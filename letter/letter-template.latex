@@ -245,7 +245,7 @@ $endif$
 % Signature
 $if(signature)$
 \usepackage{graphicx,grffile}
-\signature{$if(signature-before)$\vspace*{$signature-before$}$endif$\includegraphics{$signature$}$if(author)$\\$if(signature-after)$\vspace*{$signature-after$}$endif$$for(author)$$author$$sep$\\$endfor$$endif$}
+\signature{$if(signature-before)$\vspace*{$signature-before$}$endif$\hspace*{$if(signature-hshift)$$signature-hshift$$else$-1cm$endif$}\includegraphics[$if(signature-width)$width=$signature-width$$else$width=5cm$endif$]{$signature$}$if(author)$\\$if(signature-after)$\vspace*{$signature-after$}$endif$$for(author)$$author$$sep$\\$endfor$$endif$}
 $else$
 $if(author)$
 \signature{$for(author)$$author$$sep$\\$endfor$}
@@ -276,8 +276,15 @@ $else$
 $endif$
 
 $if(letterhead)$
-\usepackage{wallpaper}
-\ThisULCornerWallPaper{1}{$letterhead$}
+\usepackage{eso-pic}
+\usepackage{graphicx}
+\AddToShipoutPictureBG*{%
+  \AtPageUpperLeft{%
+    \put(\LenToUnit{$if(letterhead-xshift)$$letterhead-xshift$$else$2cm$endif$},-\LenToUnit{$if(letterhead-yshift)$$letterhead-yshift$$else$0.5cm$endif$}){%
+      \makebox[0pt][l]{\raisebox{-\height}{\includegraphics[width=$if(letterhead-width)$$letterhead-width$$else$4cm$endif$]{$letterhead$}}}%
+    }%
+  }%
+}
 $endif$
 
 \begin{document}

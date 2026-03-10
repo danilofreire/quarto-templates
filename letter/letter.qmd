@@ -14,8 +14,13 @@ return-address:
     - Atlanta, GA 30322, USA
     - <danilo.freire@emory.edu>
     - <https://danilofreire.github.io>
-letterhead: 
-signature: 
+letterhead: emory.png
+letterhead-width: 7cm
+letterhead-xshift: 1.7cm
+letterhead-yshift: 1.8cm
+signature: /Users/dafreir/Documents/Files/sig.png
+signature-width: 5cm
+signature-hshift: -0.3cm
 date: today
 date-format: "MMMM DD, YYYY"
 fontfamily: libertine
