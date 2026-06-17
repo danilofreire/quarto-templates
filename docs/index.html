@@ -277,7 +277,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="feature">
     <div class="ico">EN</div>
     <h3>British English</h3>
-    <p>Spelling, hyphenation, and date formats all set to <code>lang: en-GB</code> by default.</p>
+    <p>Spelling, hyphenation, and date formats all set to <code>lang: en-GB</code> by default. Prefer American English? Just change it to <code>lang: en-US</code>.</p>
   </div>
   <div class="feature">
     <div class="ico">↗</div>
@@ -299,7 +299,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>A LaTeX distribution: <a href="https://quarto.org/docs/output-formats/pdf-engine.html">TinyTeX</a> (recommended) or <a href="https://tug.org/texlive/">TeX Live</a></li>
 <li><a href="https://www.python.org/downloads/">Python</a> and <a href="https://jupyter.org/install">Jupyter</a>, for the default <code>jupyter: python3</code> kernel</li>
 </ul>
-<p>R users can remove the <code>jupyter: python3</code> line from the YAML header and install the <a href="https://quarto-dev.github.io/quarto-r/"><code>quarto-r</code></a> and <a href="https://rmarkdown.rstudio.com/lesson-1.html"><code>rmarkdown</code></a> packages instead.</p>
+<p>Prefer R? You can switch the kernel in one step: delete the <code>jupyter: python3</code> line from the YAML header (that line is what tells Quarto to use Python), then install the <a href="https://quarto-dev.github.io/quarto-r/"><code>quarto-r</code></a> and <a href="https://rmarkdown.rstudio.com/lesson-1.html"><code>rmarkdown</code></a> packages. Quarto then renders the template with R, and you do not need Python or Jupyter at all.</p>
 <section id="usage" class="level2 section-head">
 <h2 data-anchor-id="usage">Usage</h2>
 <p>Clone the repository and render any template you like.</p>
