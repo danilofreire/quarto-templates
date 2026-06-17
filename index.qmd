@@ -146,7 +146,7 @@ You need Quarto, a LaTeX distribution, and (for the default kernel) Python with 
 - A LaTeX distribution: [TinyTeX](https://quarto.org/docs/output-formats/pdf-engine.html) (recommended) or [TeX Live](https://tug.org/texlive/)
 - [Python](https://www.python.org/downloads/) and [Jupyter](https://jupyter.org/install), for the default `jupyter: python3` kernel
 
-Prefer R? You can switch the kernel in one step: delete the `jupyter: python3` line from the YAML header (that line is what tells Quarto to use Python), then install the [`quarto-r`](https://quarto-dev.github.io/quarto-r/) and [`rmarkdown`](https://rmarkdown.rstudio.com/lesson-1.html) packages. Quarto then renders the template with R, and you do not need Python or Jupyter at all.
+Prefer R? Delete the `jupyter: python3` line from the YAML header (that line is what tells Quarto to use Python) and install the [`quarto-r`](https://quarto-dev.github.io/quarto-r/) and [`rmarkdown`](https://rmarkdown.rstudio.com/lesson-1.html) packages. Quarto then renders with R: it switches to the knitr engine on its own as soon as it sees an `{r}` code chunk, and you can make that explicit by adding `engine: knitr` to the header. Either way, you do not need Python or Jupyter.
 
 ::: {.section-head}
 ## Usage {#usage}

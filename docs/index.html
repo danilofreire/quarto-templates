@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dd37d0a8bb0457c4b2b9efae32d4caf3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fec86681ddec05aa003af549ef4fb2c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6b06e7871810915e3c05a96f8c8d5b4e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -299,7 +299,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>A LaTeX distribution: <a href="https://quarto.org/docs/output-formats/pdf-engine.html">TinyTeX</a> (recommended) or <a href="https://tug.org/texlive/">TeX Live</a></li>
 <li><a href="https://www.python.org/downloads/">Python</a> and <a href="https://jupyter.org/install">Jupyter</a>, for the default <code>jupyter: python3</code> kernel</li>
 </ul>
-<p>Prefer R? You can switch the kernel in one step: delete the <code>jupyter: python3</code> line from the YAML header (that line is what tells Quarto to use Python), then install the <a href="https://quarto-dev.github.io/quarto-r/"><code>quarto-r</code></a> and <a href="https://rmarkdown.rstudio.com/lesson-1.html"><code>rmarkdown</code></a> packages. Quarto then renders the template with R, and you do not need Python or Jupyter at all.</p>
+<p>Prefer R? Delete the <code>jupyter: python3</code> line from the YAML header (that line is what tells Quarto to use Python) and install the <a href="https://quarto-dev.github.io/quarto-r/"><code>quarto-r</code></a> and <a href="https://rmarkdown.rstudio.com/lesson-1.html"><code>rmarkdown</code></a> packages. Quarto then renders with R: it switches to the knitr engine on its own as soon as it sees an <code>{r}</code> code chunk, and you can make that explicit by adding <code>engine: knitr</code> to the header. Either way, you do not need Python or Jupyter.</p>
 <section id="usage" class="level2 section-head">
 <h2 data-anchor-id="usage">Usage</h2>
 <p>Clone the repository and render any template you like.</p>
