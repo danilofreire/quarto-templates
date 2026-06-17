@@ -2,6 +2,8 @@
 
 A collection of personal [Quarto](https://quarto.org) PDF templates. They share a common style: [Libertine](https://libertine-fonts.org/) and [Inconsolata](https://fonts.google.com/specimen/Inconsolata) fonts, British English spelling, coloured links, and clean formatting throughout.
 
+Browse the templates with previews on the [project website](https://danilofreire.github.io/quarto-templates).
+
 ## Templates
 
 | Template | Description | Main files |

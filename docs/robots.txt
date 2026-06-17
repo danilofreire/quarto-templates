@@ -1,0 +1,1 @@
+Sitemap: https://danilofreire.github.io/quarto-templates/sitemap.xml

@@ -333,7 +333,8 @@ TSWLatexianTemp*
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -572,7 +573,9 @@ vignettes/*.pdf
 .Renviron
 
 # pkgdown site
-docs/
+# docs/  -- not ignored here: docs/ is the Quarto website output served by GitHub Pages
+# but the website does not use these per-template extension copies Quarto duplicates on render:
+docs/*/_extensions/
 
 # translation temp files
 po/*~
@@ -632,3 +635,6 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/latex,linux,macos,python,r,vim,windows
 
+
+/.quarto/
+**/*.quarto_ipynb

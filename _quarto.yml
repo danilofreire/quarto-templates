@@ -1,0 +1,49 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+  resources:
+    - article/article.pdf
+    - cv/cv.pdf
+    - letter/letter.pdf
+    - syllabus/syllabus.pdf
+    - title-page/title-page.pdf
+    - assets/**
+
+website:
+  title: "Quarto templates"
+  description: "Clean, personal PDF templates for academic writing in Quarto."
+  site-url: https://danilofreire.github.io/quarto-templates
+  repo-url: https://github.com/danilofreire/quarto-templates
+  favicon: assets/favicon.svg
+  open-graph: true
+  navbar:
+    pinned: true
+    left:
+      - text: Templates
+        href: index.qmd#templates
+      - text: Install
+        href: index.qmd#install
+      - text: Usage
+        href: index.qmd#usage
+    right:
+      - icon: github
+        href: https://github.com/danilofreire/quarto-templates
+        aria-label: GitHub repository
+  page-footer:
+    border: false
+    left: "Made with [Quarto](https://quarto.org) by [Danilo Freire](https://danilofreire.com)."
+    right: "[Source on GitHub](https://github.com/danilofreire/quarto-templates)"
+
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    toc: false
+    page-layout: full
+    grid:
+      body-width: 1100px
+    link-external-newwindow: true
+    link-external-icon: false
+    anchor-sections: false
+    lang: en-GB

@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quarto templates",
+    "section": "",
+    "text": "Quarto templates\n    A small collection of personal PDF templates for Quarto. They share one clean style: Libertine and Inconsolata fonts, British English spelling, coloured links, and generous margins.\n    \n      Libertine + Inconsolata\n      British English\n      pdflatex\n      5 templates\n    \n    \n      Browse the templates\n      View on GitHub\nR users can remove the jupyter: python3 line from the YAML header and install the quarto-r and rmarkdown packages instead.\nEdit the .qmd file to change the content, and adjust the YAML header to change the formatting (fonts, spacing, margins, colours). Each template carries its own .latex file that controls the PDF layout.\nThe letter template adds a few optional fields for a letterhead and a signature image:\nAll of these are optional. Leave them out and the letter renders with neither a letterhead nor a signature.\nThe templates are free to use and adapt. If you find them helpful, consider starring the repository; comments, issues, and pull requests are welcome"
+  },
+  {
+    "objectID": "index.html#templates",
+    "href": "index.html#templates",
+    "title": "Quarto templates",
+    "section": "The templates",
+    "text": "The templates\nEach template is a single .qmd file with a matching LaTeX layout. Click any preview to open the rendered PDF."
+  },
+  {
+    "objectID": "index.html#one-shared-style",
+    "href": "index.html#one-shared-style",
+    "title": "Quarto templates",
+    "section": "One shared style",
+    "text": "One shared style"
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "Quarto templates",
+    "section": "Installation",
+    "text": "Installation\nYou need Quarto, a LaTeX distribution, and (for the default kernel) Python with Jupyter."
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "Quarto templates",
+    "section": "Usage",
+    "text": "Usage\nClone the repository and render any template you like."
+  }
+]
